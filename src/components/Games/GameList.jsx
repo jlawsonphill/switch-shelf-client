@@ -15,7 +15,7 @@ export const GameList = () => {
     }
 
     const handleDelete = (id) => {
-        if(window.confirm("Are you sure you want to delete this spool?")) {
+        if(window.confirm("Are you sure you want to delete this game?")) {
             fetch(`http://localhost:8000/games/${id}`, {
                 headers: getAuthHeaders().headers,
                 method: "DELETE"
